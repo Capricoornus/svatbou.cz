@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>svatbou Marka a Barči</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-lila: #E3D3EF;
+            --color-lila-dark: #420362;
+            --aspect-retro: 3/4; 
+        }
+    </style>
+    <style>
+        .source-serif-4 {
+            font-family: "Source Serif 4", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
     <header class="text-center md:text-left p-10">
         <h1 class="text-5xl md:inline-block md:mr-2">svatbou</h1>
         <span class="text-xl">Marka a Barči</span>
     </header>
-    <main>
+
+    <main class="source-serif-4">
+
+        <section class="bg-lila p-4 sm:p-12 md:flex md:flex-row md:justify-center">
+            <img src="assets/img/engaged.jpg" alt="Zasnoubeni" class="-mt-8 sm:mt-auto w-100 aspect-retro justify-self-center">
+            <div class="bg-white text-lila-dark p-8 md:p-12 lg:p-24 md:self-center md:w-2/5 relative">
+                <h1 class="text-4xl">Vítejte</h1>
+                <p class="text-xl mt-8">Zde najdete doplňující informace k naší svatbě. Pokud byste zde nenašli odpovědi, můžete nám samozřejmě zavolat.</p>
+                <p class="text-xl mt-8">Budeme se na vás moc těšit!</p>
+                <img src="assets/img/flower.png" alt="Fialová kytka" class="absolute -right-16 -bottom-12 hidden lg:block">
+            </div>
+        </section>
 
     </main>
+
 </body>
+
 </html>
